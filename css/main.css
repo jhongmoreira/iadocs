@@ -30,6 +30,15 @@
     text-shadow: 0 0 10px #00ffc8;
 }
 
+
+.img-student{
+    background-image: url("../images/student.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 1rem;
+}
+
 /* Efeito Fundo */
 #background {
     position: fixed;
@@ -50,4 +59,16 @@
     mix-blend-mode: screen; /* Faz as cores se misturarem */
     opacity: 0.8;
     filter: blur(30px);
+}
+
+/* Efeito carregar DIVS */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
